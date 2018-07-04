@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.xtkj.tlx.entity">
+	<class name="Picture" table="Picture">
+		<id name="pictureID">
+		<generator class="native"></generator>
+		</id>
+		<property name="introduction"/>
+		<property name="name"/>
+		<property name="lineID"/>
+	</class>
+
+</hibernate-mapping>
+

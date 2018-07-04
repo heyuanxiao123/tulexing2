@@ -1,0 +1,31 @@
+
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+	<property name="connection.driver_class">
+		com.microsoft.sqlserver.jdbc.SQLServerDriver
+	</property>
+	<property name="connection.url">
+		jdbc:sqlserver://localhost:1433;DataBaseName=Tule
+	</property>
+	<property name="connection.username">sa</property>
+	<property name="connection.password">1</property>
+	<property name="hibernate.hbm2ddl.auto">update</property>
+	<property name="show_sql">true</property>
+	<property name="format_sql">true</property>
+	<mapping resource="com/xtkj/tlx/entity/Car.hbm.xml" />
+	<mapping resource="com/xtkj/tlx/entity/Customer.hbm.xml" />
+	<mapping resource="com/xtkj/tlx/entity/Line.hbm.xml" />
+	<mapping resource="com/xtkj/tlx/entity/LineType.hbm.xml" />
+	<mapping resource="com/xtkj/tlx/entity/OrderDetail.hbm.xml" />
+	<mapping resource="com/xtkj/tlx/entity/OT_Detail.hbm.xml" />
+	<mapping resource="com/xtkj/tlx/entity/Picture.hbm.xml" />
+	<mapping resource="com/xtkj/tlx/entity/Tourist.hbm.xml" />
+
+
+
+</session-factory>
+</hibernate-configuration>

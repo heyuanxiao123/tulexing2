@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.xtkj.tlx.entity">
+
+	<class name="Line" table="Line">
+		<id name="lineID">
+		</id>
+		<property name="lineTypeID"/>
+		<property name="lineName"/>
+		<property name="days"/>
+		<property name="price"/>
+		<property name="vehicle"/>
+		<property name="teamBuy"/>
+		<property name="teamBuyPrice"/>
+		<property name="introduction"/>
+		<property name="reason"/>
+		<property name="arrange"/>
+		<property name="beginTime"/>
+		<property name="endTime"/>
+		<property name="onTime"/>
+		<property name="discount"/>
+	</class>
+
+</hibernate-mapping>
+

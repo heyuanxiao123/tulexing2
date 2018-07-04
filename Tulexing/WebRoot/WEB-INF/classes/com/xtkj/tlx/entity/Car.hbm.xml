@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.xtkj.tlx.entity">
+
+	<class name="Car" table="Car">
+		<id name="carID">
+			<generator class="native"></generator>
+		</id>
+		<property name="customerID"/>
+		<property name="lineID"/>
+		<property name="time"/>
+	</class>
+
+</hibernate-mapping>
+
